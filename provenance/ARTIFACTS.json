@@ -1,0 +1,1068 @@
+{
+  "schema": "vlm3d-documented-ct-evidence-v1",
+  "evidence_generated_at": "2026-10-27T14:37:43.378166-07:00",
+  "source_identity_caveat": "Source snapshots match uploaded collection, not independently extracted platform image files.",
+  "missing": [
+    "task3_baseline_fixed_archive"
+  ],
+  "skipped": [],
+  "errors": [],
+  "artifacts": [
+    {
+      "label": "task1_calibration_order_archive",
+      "filename": "task1_submission_calibration_order_fixed.tar.gz",
+      "bytes": 3324812080,
+      "sha256": "eb71d033dbe45aa24b8c336a321837535bb4a7af4d26ca1449cae83fcef3a604",
+      "modified_at": "2026-08-25T13:11:34.308184-07:00"
+    },
+    {
+      "label": "task1_metric_hardened_archive",
+      "filename": "task1_submission_hardened.tar.gz",
+      "bytes": 3329284939,
+      "sha256": "cc09368e2a9db44a32a8daa6dcd52120a055c0713bda87231706695e9f378d51",
+      "modified_at": "2026-08-25T21:19:00.788599-07:00"
+    },
+    {
+      "label": "task2_reward_hardened_archive",
+      "filename": "task2_submission_hardened.tar.gz",
+      "bytes": 3330004348,
+      "sha256": "88b01e5d812ef772fb55b5e7ed38a0a9aaaad86ad4c33fff3c03073de5596f53",
+      "modified_at": "2026-08-25T21:21:19.703602-07:00"
+    },
+    {
+      "label": "task3_full47149_archive",
+      "filename": "task3_submission_full47149_hardened.tar.gz",
+      "bytes": 3550687926,
+      "sha256": "fa4c645e62ee7a0ffa5cd8440b0fc91a6a2fc6ae0943a3551bf824c827ef6b06",
+      "modified_at": "2026-08-24T19:31:58.049619-07:00"
+    },
+    {
+      "label": "task1_pre_overwrite_weights",
+      "filename": "task1_weights.zip",
+      "bytes": 669300196,
+      "sha256": "5f252b1b2da96516303762fde1ec28af428849edb83afb7150435562b71d2d27",
+      "modified_at": "2026-08-25T07:28:49.470984-07:00",
+      "zip_contents": [
+        {
+          "name": "dino_head_0.pt",
+          "bytes": 8772521,
+          "crc32": "9563a03d"
+        },
+        {
+          "name": "dino_head_1.pt",
+          "bytes": 8772521,
+          "crc32": "fc4df049"
+        },
+        {
+          "name": "dino_head_2.pt",
+          "bytes": 8772521,
+          "crc32": "9b7833c8"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "crc32": "09b9265b"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 101,
+          "crc32": "00f9054a"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "crc32": "d18f35ec"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/config.json.metadata",
+          "bytes": 100,
+          "crc32": "0eb55b6f"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/model.safetensors.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/model.safetensors.metadata",
+          "bytes": 125,
+          "crc32": "48b1d224"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/preprocessor_config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/preprocessor_config.json.metadata",
+          "bytes": 101,
+          "crc32": "e047b058"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/pytorch_model.bin.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/pytorch_model.bin.metadata",
+          "bytes": 125,
+          "crc32": "37be249e"
+        },
+        {
+          "name": "dinov2-base/.gitattributes",
+          "bytes": 1519,
+          "crc32": "83a10daa"
+        },
+        {
+          "name": "dinov2-base/README.md",
+          "bytes": 3047,
+          "crc32": "e7fc3bd5"
+        },
+        {
+          "name": "dinov2-base/config.json",
+          "bytes": 548,
+          "crc32": "c6f75ec4"
+        },
+        {
+          "name": "dinov2-base/model.safetensors",
+          "bytes": 346345912,
+          "crc32": "f0060fe0"
+        },
+        {
+          "name": "dinov2-base/preprocessor_config.json",
+          "bytes": 436,
+          "crc32": "7b25cbd2"
+        },
+        {
+          "name": "dinov2-base/pytorch_model.bin",
+          "bytes": 346392713,
+          "crc32": "227d12e5"
+        },
+        {
+          "name": "final_recipe.json",
+          "bytes": 10032,
+          "crc32": "ce526c44"
+        },
+        {
+          "name": "task1_metric_calibration.json",
+          "bytes": 9431,
+          "crc32": "f9eacf5b"
+        }
+      ]
+    },
+    {
+      "label": "task1_pre_repair_weights",
+      "filename": "task1_weights.zip",
+      "bytes": 669300196,
+      "sha256": "5f252b1b2da96516303762fde1ec28af428849edb83afb7150435562b71d2d27",
+      "modified_at": "2026-08-25T07:28:49.470984-07:00",
+      "zip_contents": [
+        {
+          "name": "dino_head_0.pt",
+          "bytes": 8772521,
+          "crc32": "9563a03d"
+        },
+        {
+          "name": "dino_head_1.pt",
+          "bytes": 8772521,
+          "crc32": "fc4df049"
+        },
+        {
+          "name": "dino_head_2.pt",
+          "bytes": 8772521,
+          "crc32": "9b7833c8"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "crc32": "09b9265b"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 101,
+          "crc32": "00f9054a"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "crc32": "d18f35ec"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/config.json.metadata",
+          "bytes": 100,
+          "crc32": "0eb55b6f"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/model.safetensors.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/model.safetensors.metadata",
+          "bytes": 125,
+          "crc32": "48b1d224"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/preprocessor_config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/preprocessor_config.json.metadata",
+          "bytes": 101,
+          "crc32": "e047b058"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/pytorch_model.bin.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/pytorch_model.bin.metadata",
+          "bytes": 125,
+          "crc32": "37be249e"
+        },
+        {
+          "name": "dinov2-base/.gitattributes",
+          "bytes": 1519,
+          "crc32": "83a10daa"
+        },
+        {
+          "name": "dinov2-base/README.md",
+          "bytes": 3047,
+          "crc32": "e7fc3bd5"
+        },
+        {
+          "name": "dinov2-base/config.json",
+          "bytes": 548,
+          "crc32": "c6f75ec4"
+        },
+        {
+          "name": "dinov2-base/model.safetensors",
+          "bytes": 346345912,
+          "crc32": "f0060fe0"
+        },
+        {
+          "name": "dinov2-base/preprocessor_config.json",
+          "bytes": 436,
+          "crc32": "7b25cbd2"
+        },
+        {
+          "name": "dinov2-base/pytorch_model.bin",
+          "bytes": 346392713,
+          "crc32": "227d12e5"
+        },
+        {
+          "name": "final_recipe.json",
+          "bytes": 10032,
+          "crc32": "ce526c44"
+        },
+        {
+          "name": "task1_metric_calibration.json",
+          "bytes": 9431,
+          "crc32": "f9eacf5b"
+        }
+      ]
+    },
+    {
+      "label": "task1_current_weights",
+      "filename": "task1_weights.zip",
+      "bytes": 669300196,
+      "sha256": "5f252b1b2da96516303762fde1ec28af428849edb83afb7150435562b71d2d27",
+      "modified_at": "2026-08-25T21:05:46.119648-07:00",
+      "zip_contents": [
+        {
+          "name": "dino_head_0.pt",
+          "bytes": 8772521,
+          "crc32": "9563a03d"
+        },
+        {
+          "name": "dino_head_1.pt",
+          "bytes": 8772521,
+          "crc32": "fc4df049"
+        },
+        {
+          "name": "dino_head_2.pt",
+          "bytes": 8772521,
+          "crc32": "9b7833c8"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "crc32": "09b9265b"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 101,
+          "crc32": "00f9054a"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "crc32": "d18f35ec"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/config.json.metadata",
+          "bytes": 100,
+          "crc32": "0eb55b6f"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/model.safetensors.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/model.safetensors.metadata",
+          "bytes": 125,
+          "crc32": "48b1d224"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/preprocessor_config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/preprocessor_config.json.metadata",
+          "bytes": 101,
+          "crc32": "e047b058"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/pytorch_model.bin.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "dinov2-base/.cache/huggingface/download/pytorch_model.bin.metadata",
+          "bytes": 125,
+          "crc32": "37be249e"
+        },
+        {
+          "name": "dinov2-base/.gitattributes",
+          "bytes": 1519,
+          "crc32": "83a10daa"
+        },
+        {
+          "name": "dinov2-base/README.md",
+          "bytes": 3047,
+          "crc32": "e7fc3bd5"
+        },
+        {
+          "name": "dinov2-base/config.json",
+          "bytes": 548,
+          "crc32": "c6f75ec4"
+        },
+        {
+          "name": "dinov2-base/model.safetensors",
+          "bytes": 346345912,
+          "crc32": "f0060fe0"
+        },
+        {
+          "name": "dinov2-base/preprocessor_config.json",
+          "bytes": 436,
+          "crc32": "7b25cbd2"
+        },
+        {
+          "name": "dinov2-base/pytorch_model.bin",
+          "bytes": 346392713,
+          "crc32": "227d12e5"
+        },
+        {
+          "name": "final_recipe.json",
+          "bytes": 10032,
+          "crc32": "ce526c44"
+        },
+        {
+          "name": "task1_metric_calibration.json",
+          "bytes": 9431,
+          "crc32": "f9eacf5b"
+        }
+      ]
+    },
+    {
+      "label": "task2_current_weights",
+      "filename": "task2_weights.zip",
+      "bytes": 2897632443,
+      "sha256": "ab8417b0e0b7395988ecdd748ad1fc543fc6f1d9866a420b95150d28bf793ebc",
+      "modified_at": "2026-08-25T21:05:47.196052-07:00",
+      "zip_contents": [
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "crc32": "09b9265b"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 100,
+          "crc32": "626736a2"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "crc32": "814fa5a6"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/config.json.metadata",
+          "bytes": 100,
+          "crc32": "488774e2"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/merges.txt.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/merges.txt.metadata",
+          "bytes": 100,
+          "crc32": "4faf8e06"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/pytorch_model.bin.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/pytorch_model.bin.metadata",
+          "bytes": 124,
+          "crc32": "5debc3bc"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/special_tokens_map.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/special_tokens_map.json.metadata",
+          "bytes": 101,
+          "crc32": "125968bc"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/tokenizer_config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/tokenizer_config.json.metadata",
+          "bytes": 101,
+          "crc32": "55846565"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/training_args.bin.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/training_args.bin.metadata",
+          "bytes": 125,
+          "crc32": "7a4cb42e"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/vocab.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.cache/huggingface/download/vocab.json.metadata",
+          "bytes": 101,
+          "crc32": "66a11216"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/.gitattributes",
+          "bytes": 1384,
+          "crc32": "a78ad5e3"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/README.md",
+          "bytes": 1999,
+          "crc32": "c2c2368c"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/config.json",
+          "bytes": 551,
+          "crc32": "c8119811"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/merges.txt",
+          "bytes": 456318,
+          "crc32": "cf4b72c4"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/pytorch_model.bin",
+          "bytes": 498845934,
+          "crc32": "971a6edb"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/special_tokens_map.json",
+          "bytes": 772,
+          "crc32": "5c10d755"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/tokenizer_config.json",
+          "bytes": 997,
+          "crc32": "9747ed77"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/training_args.bin",
+          "bytes": 1570,
+          "crc32": "899aa8ec"
+        },
+        {
+          "name": "RadBERT-RoBERTa-4m/vocab.json",
+          "bytes": 898822,
+          "crc32": "0fc4cb9e"
+        },
+        {
+          "name": "RadBertClassifier.pth",
+          "bytes": 498727073,
+          "crc32": "df0ae058"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/.gitignore",
+          "bytes": 1,
+          "crc32": "09b9265b"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/.gitattributes.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/.gitattributes.metadata",
+          "bytes": 100,
+          "crc32": "2c1b7d9b"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/LICENSE.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/LICENSE.metadata",
+          "bytes": 101,
+          "crc32": "e0e18f80"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/README.md.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/README.md.metadata",
+          "bytes": 101,
+          "crc32": "b0522521"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/config.json.metadata",
+          "bytes": 101,
+          "crc32": "8c6eb49e"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/generation_config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/generation_config.json.metadata",
+          "bytes": 100,
+          "crc32": "38e8ebb6"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/merges.txt.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/merges.txt.metadata",
+          "bytes": 101,
+          "crc32": "844ff6a2"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/model.safetensors.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/model.safetensors.metadata",
+          "bytes": 125,
+          "crc32": "511cb3ef"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/tokenizer.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/tokenizer.json.metadata",
+          "bytes": 100,
+          "crc32": "b098c868"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/tokenizer_config.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/tokenizer_config.json.metadata",
+          "bytes": 101,
+          "crc32": "18afc396"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/vocab.json.lock",
+          "bytes": 0,
+          "crc32": "00000000"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.cache/huggingface/download/vocab.json.metadata",
+          "bytes": 101,
+          "crc32": "eb239718"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/.gitattributes",
+          "bytes": 1519,
+          "crc32": "83a10daa"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/LICENSE",
+          "bytes": 11343,
+          "crc32": "bf8ec87b"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/README.md",
+          "bytes": 4917,
+          "crc32": "db30efb4"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/config.json",
+          "bytes": 659,
+          "crc32": "df314219"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/generation_config.json",
+          "bytes": 242,
+          "crc32": "8f7803bc"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/merges.txt",
+          "bytes": 1671839,
+          "crc32": "327cfba1"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/model.safetensors",
+          "bytes": 988097824,
+          "crc32": "7e53dd13"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/tokenizer.json",
+          "bytes": 7031645,
+          "crc32": "0a8cbadb"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/tokenizer_config.json",
+          "bytes": 7305,
+          "crc32": "0b49d5e5"
+        },
+        {
+          "name": "qwen2.5-0.5b-instruct/vocab.json",
+          "bytes": 2776833,
+          "crc32": "8a9480f3"
+        },
+        {
+          "name": "reranker.joblib",
+          "bytes": 612,
+          "crc32": "81ce09d3"
+        },
+        {
+          "name": "reranker.json",
+          "bytes": 1519,
+          "crc32": "592d19c8"
+        },
+        {
+          "name": "task2_best.pt",
+          "bytes": 1401431089,
+          "crc32": "0a1d3535"
+        }
+      ]
+    },
+    {
+      "label": "task3_baseline_weights",
+      "filename": "task3_weights_baseline.zip",
+      "bytes": 349879936,
+      "sha256": "6bbfd645121503579377c1870970dd41df63688d09b3560af69552a5c34b2411",
+      "modified_at": "2026-08-16T10:47:51-07:00",
+      "zip_contents": [
+        {
+          "name": "task3_autoencoder.pt",
+          "bytes": 79502883,
+          "crc32": "7cdae294"
+        },
+        {
+          "name": "task3_report_to_latent/mapper.pt",
+          "bytes": 269431675,
+          "crc32": "3de7a0d9"
+        },
+        {
+          "name": "task3_report_to_latent/tokenizer_config.json",
+          "bytes": 1196,
+          "crc32": "eddcbb7f"
+        },
+        {
+          "name": "task3_report_to_latent/special_tokens_map.json",
+          "bytes": 125,
+          "crc32": "e667c639"
+        },
+        {
+          "name": "task3_report_to_latent/vocab.txt",
+          "bytes": 231508,
+          "crc32": "e3084609"
+        },
+        {
+          "name": "task3_report_to_latent/tokenizer.json",
+          "bytes": 711649,
+          "crc32": "d94a4515"
+        }
+      ]
+    },
+    {
+      "label": "task3_full47149_weights",
+      "filename": "task3_weights_full_47149.zip",
+      "bytes": 516792909,
+      "sha256": "b06dea5916646cda857f815d595e609523384566fcd602cbc34ad3decf13722a",
+      "modified_at": "2026-08-24T19:29:27.023845-07:00",
+      "zip_contents": [
+        {
+          "name": "task3_autoencoder.pt",
+          "bytes": 238512445,
+          "crc32": "2e127364"
+        },
+        {
+          "name": "task3_report_to_latent/tokenizer_config.json",
+          "bytes": 587,
+          "crc32": "f78c61f7"
+        },
+        {
+          "name": "task3_report_to_latent/special_tokens_map.json",
+          "bytes": 125,
+          "crc32": "e667c639"
+        },
+        {
+          "name": "task3_report_to_latent/vocab.txt",
+          "bytes": 231508,
+          "crc32": "e3084609"
+        },
+        {
+          "name": "task3_report_to_latent/tokenizer.json",
+          "bytes": 711649,
+          "crc32": "d94a4515"
+        },
+        {
+          "name": "task3_report_to_latent/mapper.pt",
+          "bytes": 277335695,
+          "crc32": "7d0df6a6"
+        }
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": "tasks/task1/Dockerfile",
+      "sha256": "aeb232b6b23b4a7eac78689a123860fc1f23267003b4b8d852f1298b867190f4"
+    },
+    {
+      "path": "tasks/task1/build_on_mac.sh",
+      "sha256": "2dd82544fd9037e1238d662a7378e2ccdab87d033fcf822108ec48db4727daa8"
+    },
+    {
+      "path": "tasks/task1/entrypoint.sh",
+      "sha256": "a79bbbd1773a4188c236b28d30b5c315aa154ba3fdc4f3593f91981c70f20b8f"
+    },
+    {
+      "path": "tasks/task1/forithmus_contract_guard.py",
+      "sha256": "63cdd744296237f0d828dc8052229240b888ab8a9acce55a036d555e67cfd274"
+    },
+    {
+      "path": "tasks/task1/model_code_from_original.py",
+      "sha256": "c6e5d998ae804f029cf16430e230fc6041c2bfdc896934528ec1432d7aa733d2"
+    },
+    {
+      "path": "tasks/task1/model_def.py",
+      "sha256": "3098b674ffe55591417073e756de32cb8d2f68d887b114699831edbacf2d07b5"
+    },
+    {
+      "path": "tasks/task1/process.py",
+      "sha256": "61161e8e4cf56d8e9065e9983be4e0d25bcb3908eb85a18b6ab5bd02ef06927d"
+    },
+    {
+      "path": "tasks/task1/requirements.txt",
+      "sha256": "20dce1a35657de222141e05f48fad5ec045f687127dc9773f5b3b4bb869c6097"
+    },
+    {
+      "path": "tasks/task1/sota_models.py",
+      "sha256": "2fcc389b5342d3b42689c25335731bd545bc4138a06140b07200862f1804d1da"
+    },
+    {
+      "path": "tasks/task1/task1_calibrate_output.py",
+      "sha256": "cc1ce687bc1d65341545de7b04bad41a8639490b435f8aea1f6afef7645fb36f"
+    },
+    {
+      "path": "tasks/task1/vlm3d_common.py",
+      "sha256": "fb4406648d278c1c528e31402042a316b13d3fec627b3428e0e61a712f901b39"
+    },
+    {
+      "path": "tasks/task1-later-hardened/Dockerfile",
+      "sha256": "c7feb226f3f546223267562bb5da879979fe20ac10637cc0547eff5aea8f4979"
+    },
+    {
+      "path": "tasks/task1-later-hardened/build_on_mac.sh",
+      "sha256": "2dd82544fd9037e1238d662a7378e2ccdab87d033fcf822108ec48db4727daa8"
+    },
+    {
+      "path": "tasks/task1-later-hardened/entrypoint.sh",
+      "sha256": "0fbb9874dc2d03461c00551e65b5bd7defacf13af194d89c0b4993542f1578c3"
+    },
+    {
+      "path": "tasks/task1-later-hardened/forithmus_contract_guard.py",
+      "sha256": "d86bef445ac00a66e97acce422bd320c5483057057335d1b970d9c5503be66c3"
+    },
+    {
+      "path": "tasks/task1-later-hardened/model_code_from_original.py",
+      "sha256": "c6e5d998ae804f029cf16430e230fc6041c2bfdc896934528ec1432d7aa733d2"
+    },
+    {
+      "path": "tasks/task1-later-hardened/model_def.py",
+      "sha256": "3098b674ffe55591417073e756de32cb8d2f68d887b114699831edbacf2d07b5"
+    },
+    {
+      "path": "tasks/task1-later-hardened/process.py",
+      "sha256": "61161e8e4cf56d8e9065e9983be4e0d25bcb3908eb85a18b6ab5bd02ef06927d"
+    },
+    {
+      "path": "tasks/task1-later-hardened/requirements.txt",
+      "sha256": "972d151fa7f5049b816240fa5487a8f8944b82f6438734e721259e8042c84c7c"
+    },
+    {
+      "path": "tasks/task1-later-hardened/sota_models.py",
+      "sha256": "2fcc389b5342d3b42689c25335731bd545bc4138a06140b07200862f1804d1da"
+    },
+    {
+      "path": "tasks/task1-later-hardened/task1_calibrate_output.py",
+      "sha256": "cc1ce687bc1d65341545de7b04bad41a8639490b435f8aea1f6afef7645fb36f"
+    },
+    {
+      "path": "tasks/task1-later-hardened/vlm3d_common.py",
+      "sha256": "fb4406648d278c1c528e31402042a316b13d3fec627b3428e0e61a712f901b39"
+    },
+    {
+      "path": "tasks/task2/Dockerfile",
+      "sha256": "86b5b9a3d265442662da47eeda2a406d24d4170f90da43e7640958cef9094735"
+    },
+    {
+      "path": "tasks/task2/build_on_mac.sh",
+      "sha256": "19cabd739e35c3924ac35c7c13967bc0afcf22d20d05909cbeb89571900e096e"
+    },
+    {
+      "path": "tasks/task2/entrypoint.sh",
+      "sha256": "5abaa129564d6cff4492d6c59b82476e38eabf9d58557e0e4b9ddddf5889324c"
+    },
+    {
+      "path": "tasks/task2/forithmus_contract_guard.py",
+      "sha256": "d86bef445ac00a66e97acce422bd320c5483057057335d1b970d9c5503be66c3"
+    },
+    {
+      "path": "tasks/task2/model_code_from_original.py",
+      "sha256": "c6e5d998ae804f029cf16430e230fc6041c2bfdc896934528ec1432d7aa733d2"
+    },
+    {
+      "path": "tasks/task2/process.py",
+      "sha256": "c4c600fa7d7e86bf50432181c74e07828feee398a1e090615020f1885dcfc3d3"
+    },
+    {
+      "path": "tasks/task2/requirements.txt",
+      "sha256": "36675f900b112c615259d2042442c12b651f1e1aa0efd1e3e2e739e2b6120e20"
+    },
+    {
+      "path": "tasks/task2/sota_models.py",
+      "sha256": "2fcc389b5342d3b42689c25335731bd545bc4138a06140b07200862f1804d1da"
+    },
+    {
+      "path": "tasks/task2/task2_diverse_entry.py",
+      "sha256": "68c50ac4a3a2e85edc733217b2537b38e37e2ec1e2aefda61a5ebc89f7069394"
+    },
+    {
+      "path": "tasks/task2/task2_diversity.py",
+      "sha256": "ded014a7d5ddd0e0a9c8fce9b4f0354ac822f17f61e8ad632b27392b673e1cb1"
+    },
+    {
+      "path": "tasks/task2/vlm3d_common.py",
+      "sha256": "fb4406648d278c1c528e31402042a316b13d3fec627b3428e0e61a712f901b39"
+    },
+    {
+      "path": "tasks/task2/vlm3d_reward_model.py",
+      "sha256": "5fb0926f71e02aee6cd0b7466de4691b2ab66eb52ad63f18dc202f9b76f6a020"
+    },
+    {
+      "path": "tasks/task3/Dockerfile",
+      "sha256": "8186ac82bfd23a147be34be624fa98f301642b7338f30e386d7608af84cbcba4"
+    },
+    {
+      "path": "tasks/task3/README.md",
+      "sha256": "fde0696535a8bef8a887559e8107b44c348b93684de9a2a02ae40cc3be60f004"
+    },
+    {
+      "path": "tasks/task3/build.sh",
+      "sha256": "8891a511817e50c5384fb83c462f4d614e590bc258d0215c614704e64be4ea69"
+    },
+    {
+      "path": "tasks/task3/entrypoint.sh",
+      "sha256": "497a0aad72533ceb2d14382bc02ca4655325ee62421fa4ecc8736dc6e0113383"
+    },
+    {
+      "path": "tasks/task3/export.sh",
+      "sha256": "4ac9a5762dc907539113144d90eab2e40b8756234362959a2677b17149e27ece"
+    },
+    {
+      "path": "tasks/task3/forithmus_contract_guard.py",
+      "sha256": "d86bef445ac00a66e97acce422bd320c5483057057335d1b970d9c5503be66c3"
+    },
+    {
+      "path": "tasks/task3/forithmus_test.sh",
+      "sha256": "f6c5e35edd5b417c5637b8d7fb324645767ca9522fc3810784c2409de1f1e44c"
+    },
+    {
+      "path": "tasks/task3/forithmus_validate_outputs.py",
+      "sha256": "35153315f9edbba282cbb3f8748461c5ff44ac89722b507c3ebd582d405120b9"
+    },
+    {
+      "path": "tasks/task3/local_docker_smoke_test.sh",
+      "sha256": "97d542e8f162ca6c24ec2e42b34c4abcebc163d59ea06789061ec90c2d962135"
+    },
+    {
+      "path": "tasks/task3/model_code_from_original.py",
+      "sha256": "eed6abf1af84987dcdb283de37a14fd200bbf27e3158a40c699ef2c52555e064"
+    },
+    {
+      "path": "tasks/task3/process.py",
+      "sha256": "05a4277e1e2979c00878850fc5e0272e891d3b465c7c627ccdea2a12d3e0abc5"
+    },
+    {
+      "path": "tasks/task3/requirements.txt",
+      "sha256": "d213b767ed412f7ac46268b93f869995de6a0507c8a9d99a1754a5873145966b"
+    },
+    {
+      "path": "tasks/task3/submit_template.sh",
+      "sha256": "9b08d84c3a0cd95733082636cde723d7667ad10b5b38cdfa3bc3c45a14bba186"
+    },
+    {
+      "path": "tasks/task3/task3_report_to_ct.py",
+      "sha256": "298250c027dbf069d5fd59173a2fcc7a7e960a6dfce3f3514c5b3b2d6204e6b5"
+    },
+    {
+      "path": "tasks/task3/vlm3d_common.py",
+      "sha256": "b0a862409553bcc1c93c03bdcc66fbdb7587e5042707f26665f8c2ed927966b5"
+    }
+  ],
+  "submissions": [
+    {
+      "task": 1,
+      "displayed_id": "cd1082ec",
+      "description": "Task1 DINO ensemble calibration-order repaired",
+      "source": "tasks/task1",
+      "weight_label": "task1_pre_overwrite_weights",
+      "archive_label": "task1_calibration_order_archive",
+      "official_score": null,
+      "weight_url": null
+    },
+    {
+      "task": 2,
+      "displayed_id": "a8799c78",
+      "description": "Task2 diverse candidates held-out reward reranker hardened",
+      "source": "tasks/task2",
+      "weight_label": "task2_current_weights",
+      "archive_label": "task2_reward_hardened_archive",
+      "official_metrics": {
+        "CRG": 0.3497,
+        "macro_f1": 0.1264,
+        "bleu_mean": 0.1657,
+        "rouge_l": 0.2391,
+        "meteor": 0.1753,
+        "accuracy": 0.7576,
+        "precision": 0.2817,
+        "recall": 0.0964
+      },
+      "weight_url": null
+    },
+    {
+      "task": 3,
+      "displayed_id": "888a2309",
+      "description": "Task3 full-47149 checkpoint, batched and MHA-ID hardened",
+      "source": "tasks/task3",
+      "weight_label": "task3_full47149_weights",
+      "archive_label": "task3_full47149_archive",
+      "official_score": null,
+      "weight_url": null
+    }
+  ]
+}

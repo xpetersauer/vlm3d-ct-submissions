@@ -1,0 +1,27 @@
+{
+  "schema": "vlm3d-task2-reference-reward-distillation-v1",
+  "accepted": true,
+  "selection": "group-held-out learned reward over inference-available original reranker features",
+  "reference_metrics_used_for_labels": [
+    "BLEU(mean of 1-4)",
+    "ROUGE-L",
+    "METEOR-lite",
+    "CIDEr-like",
+    "rule-based clinical F1"
+  ],
+  "official_crg": false,
+  "warning": "Token metrics label validation candidates only; no hidden-test reference is used at inference.",
+  "feature_count": 6,
+  "candidate_unique_ratio": 0.9909509707140507,
+  "minimum_unique_ratio": 0.75,
+  "locked_original_reward": 0.3044759239389877,
+  "locked_learned_reward": 0.3147522784755786,
+  "locked_oracle_reward": 0.37173978448809525,
+  "reward_weights": {
+    "clinical_f1": 0.45,
+    "bleu": 0.15,
+    "rouge_l": 0.15,
+    "meteor_lite": 0.1,
+    "cider": 0.15
+  }
+}
