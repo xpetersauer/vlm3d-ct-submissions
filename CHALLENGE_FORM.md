@@ -12,7 +12,11 @@ The selected inference recipe applies per-label affine transformations to the en
 
 ### Validation and Evaluation
 
-Submission **cd1082ec**: “Task1 DINO ensemble calibration-order repaired.” Recipe development used 3,039 validation cases: 500 previously used for baseline development, 1,037 for model development, 497 for selection, 366 for graph fitting, 348 for calibration and 291 for audit evaluation. The recipe's audit subset achieved macro-AUROC 0.8110 and macro-F1 0.2762 before the additional output transformation. A separate calibration evaluation used 1,828 fitting and 1,211 held-out cases and reported macro-F1 increasing from 0.2890 to 0.5233, with raw macro-AUROC 0.8149. These are internal results from distinct protocols, not interchangeable estimates or an official hidden-test score. The official score is not reported here because its exact submission mapping is unavailable.
+Submission **cd1082ec**: “Task1 DINO ensemble calibration-order repaired.”
+
+Recipe development used 3,039 validation cases: 500 for prior baseline development, 1,037 for model development, 497 for selection, 366 for graph fitting, 348 for calibration and 291 for final internal evaluation. Before the additional output transformation, the final internal subset achieved macro-AUROC 0.8110 and macro-F1 0.2762. A separate calibration evaluation used 1,828 fitting and 1,211 held-out cases, reporting macro-F1 increasing from 0.2890 to 0.5233, with raw macro-AUROC 0.8149. These internal evaluations use distinct protocols and are reported separately from official challenge results.
+
+Official platform evaluation reported **CRG score 0.4803**, **macro-AUROC 0.7814**, **macro-F1 0.5145**, accuracy 0.7445, precision 0.4418 and recall 0.6582. The platform reported a runtime of 76.7 minutes on gpu-l4-xl.
 
 ### Limits and Limitations
 
@@ -48,7 +52,11 @@ The submitted full-47,149 checkpoint is used for inference. Reports are processe
 
 ### Validation and Evaluation
 
-Submission **888a2309**: “Task3 full-47149 checkpoint, batched and MHA-ID hardened.” This submission uses the original full-47,149 training checkpoint, distributed as task3_weights_full_47149.zip. It is separate from the baseline and later metric-training candidates. Development included completion and output-format checks; these assess the container contract rather than clinical image quality. The original training/validation membership, resolved training hyperparameters and an official FVD_CTNet checkpoint-selection record are unavailable. No numeric official score is assigned here because the exact score-to-submission mapping is unavailable. Training-function defaults describe the implementation and do not establish the historical full-run training schedule.
+Submission **888a2309**: “Task3 full-47149 checkpoint, batched and MHA-ID hardened.”
+
+Evaluation used the original full-47,149 checkpoint, distributed as task3_weights_full_47149.zip. Development included completion and output-format checks. The original training/validation membership and checkpoint-selection record are unavailable; the official result evaluates this submitted checkpoint and does not establish a comparison against later training candidates.
+
+Official platform evaluation reported **FVD (CTNet) 0.8323**, FID 2.5D average 3435.7003 and CT-CLIPScore average 10.3737. Plane-specific FID 2.5D values were XY 4240.9594, XZ 3134.4108 and YZ 2931.7306. CT-CLIPScore was 14.6963 for image-to-image (I2I) and 6.0512 for text-to-image (T2I). The platform reported a runtime of 1.5 minutes on gpu-l4-xl. Metric names and values are reported as displayed by the platform.
 
 ### Limits and Limitations
 
