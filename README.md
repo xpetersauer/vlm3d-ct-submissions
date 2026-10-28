@@ -74,3 +74,11 @@ Training and development used challenge-provided CT-RATE data and pretrained
 models. Obtain the data through the [CT-RATE dataset page](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE).
 Official task schemas and evaluation code are available in
 [VLM3D-Dockers](https://github.com/forithmus/VLM3D-Dockers).
+
+## AI assistance disclosure
+
+Generative AI tools, including ChatGPT/Codex, were used extensively to
+help develop and revise code, troubleshoot errors, design experiments,
+and draft documentation. AI assistance included model implementation,
+training and inference workflows, evaluation scripts, and deployment
+packaging. The author directed the project and executed the submission workflows.
