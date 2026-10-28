@@ -2,7 +2,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
-*.env
 weights/
 input/
 output/
@@ -17,6 +16,4 @@ output/
 *.nii
 *.nii.gz
 *.mha
-*.csv
-*.jsonl
 .release_plan.json

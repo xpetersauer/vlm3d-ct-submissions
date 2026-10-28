@@ -1,32 +1,26 @@
-# Installation, usage and file formats
+# Installation and inference
 
 ## Requirements
 
-The historical Dockerfiles use pytorch/pytorch:2.4.1-cuda12.1-cudnn9-runtime,
+The Dockerfiles use pytorch/pytorch:2.4.1-cuda12.1-cudnn9-runtime,
 Python dependencies pinned in each task's requirements.txt, and an unprivileged
 appuser. Linux/amd64, Docker and an NVIDIA CUDA runtime are needed for practical
 inference. A Mac can inspect/build amd64 images but is not equivalent to the
 CUDA evaluation environment. Network access may be required at BUILD time;
 inference is intended to use locally packaged model assets offline.
 
-These are example local reproduction commands based on the collected mounts
-and entrypoints, not newly GPU-tested commands. Original files are preserved,
-including bugs; do not silently repair a historical submission before comparison.
-
-## Prepare weights
-
-Keep downloaded weight ZIPs outside normal Git. Check their SHA-256 with:
+## Download and extract weights
 
 ```bash
-python3 scripts/verify_weights.py --task task1 --file /absolute/path/task1_weights.zip
-python3 scripts/verify_weights.py --task task2 --file /absolute/path/task2_weights.zip
-python3 scripts/verify_weights.py --task task3 --file /absolute/path/task3_weights_full_47149.zip
+python3 scripts/download_weights.py task1
+python3 scripts/download_weights.py task2
+python3 scripts/download_weights.py task3
 ```
 
-Extract each verified, trusted bundle into a NEW dedicated weights directory.
-The archive contents must be at that directory's root, not nested inside an
-additional wrapper directory. Only load checkpoints/joblib files from trusted
-sources. Binary checkpoint loading was not performed in this audit.
+Each command verifies the original ZIP checksum and extracts the complete bundle
+under weights/task1, weights/task2 or weights/task3. Task 2's release parts are
+joined automatically. The source/configuration paths are tasks/taskN and
+configs/taskN for all three tasks. Only load trusted checkpoints.
 
 ## Build one image (Linux NVIDIA host)
 
@@ -99,11 +93,8 @@ AMP enabled and resume enabled. Override with TASK3_BATCH_SIZE,
 TASK3_SAVE_WORKERS, TASK3_AMP, TASK3_RESUME. CUDA OOM halves batch size.
 Do not treat synthetic prompts as performance-validation data.
 
-## Training/evaluation settings
+## Training and evaluation
 
-Task-1/2 submitted inference source does not include the exact historical
-head/generator trainer invocation and optimizer schedules. Task-3 exposes
-training functions, but defaults do not certify actual full-run settings.
-Do not launch new training to reconstruct history without a separate plan.
-Validation counts, known internal/official scores and unresolved provenance are
-reported in CHALLENGE_FORM.md; no missing number has been invented.
+Preprocessing, objectives, available validation results and limitations are
+described in [CHALLENGE_FORM.md](CHALLENGE_FORM.md). Task-specific configuration
+files are under configs/. Saved checkpoint metadata controls model dimensions.

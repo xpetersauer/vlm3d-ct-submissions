@@ -1,0 +1,18 @@
+{
+  "submission": "cd1082ec",
+  "filename": "task1_weights.zip",
+  "bytes": 669300196,
+  "sha256": "5f252b1b2da96516303762fde1ec28af428849edb83afb7150435562b71d2d27",
+  "assets": [
+    "task1_weights.zip"
+  ],
+  "checkpoints": [
+    "dino_head_0.pt",
+    "dino_head_1.pt",
+    "dino_head_2.pt"
+  ],
+  "release": "https://github.com/xpetersauer/vlm3d-ct-submissions/releases/tag/weights-v1",
+  "download_urls": [
+    "https://github.com/xpetersauer/vlm3d-ct-submissions/releases/download/weights-v1/task1_weights.zip"
+  ]
+}

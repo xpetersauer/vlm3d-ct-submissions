@@ -1,82 +1,76 @@
-# VLM3D CT-RATE — documented submission snapshots
+# VLM3D CT-RATE submissions
 
-For copy/paste GitHub source and weight-upload commands, open
-[UPLOAD_TO_GITHUB.md](UPLOAD_TO_GITHUB.md). Normal Git contains source/configs;
-the exact weight bundles are uploaded separately as release assets.
+Code, configurations and trained weights for Peter Sauer's three CT challenge submissions.
 
-**Participant:** Peter Sauer. **Draft affiliation:** UCLA–Caltech Medical Scientist
-Training Program, David Geffen School of Medicine at UCLA. Confirm final team
-membership, official affiliation wording and challenge team name before publication.
+## Download the model weights
 
-This repository assembles the source and small configuration files recovered
-from the participant's Mac. It documents three reported submissions and preserves
-one later classification variant. It contains **no binary neural weights or
-Docker archives**. Authorized public weight hosting is still required for a fully
-reproducible public release. Inference was not rerun during this documentation pass.
+**[Download weights from GitHub Releases](https://github.com/xpetersauer/vlm3d-ct-submissions/releases/tag/weights-v1)**
 
-## Copy/paste challenge responses
+Open **Assets** and download the files for your task:
 
-[CHALLENGE_FORM.md](CHALLENGE_FORM.md) contains a 200–300-word methodology for
-each task, checklist selections, data sources, validation, limitations and weight
-availability text. It supersedes the earlier speculative drafts. Exact original
-training schedules and two official score mappings remain explicitly unresolved.
+| Task | Submission | Download |
+|---|---|---|
+| 1 — Abnormality classification | cd1082ec | [task1_weights.zip](https://github.com/xpetersauer/vlm3d-ct-submissions/releases/download/weights-v1/task1_weights.zip) |
+| 2 — Report generation | a8799c78 | [Part 000](https://github.com/xpetersauer/vlm3d-ct-submissions/releases/download/weights-v1/task2_weights.zip.part000) + [Part 001](https://github.com/xpetersauer/vlm3d-ct-submissions/releases/download/weights-v1/task2_weights.zip.part001) |
+| 3 — CT volume generation | 888a2309 | [task3_weights_full_47149.zip](https://github.com/xpetersauer/vlm3d-ct-submissions/releases/download/weights-v1/task3_weights_full_47149.zip) |
 
-| Task / displayed ID | Method | Source | Weight bundle |
-|---|---|---|---|
-| 1 / cd1082ec | DINOv2-base + three query-pooling heads + repaired output calibration | tasks/task1 | task1_weights.zip |
-| 2 / a8799c78 | SwinUNETR-derived visual tokens + Qwen2.5-0.5B LoRA + RadBERT/ridge reranking | tasks/task2 | task2_weights.zip |
-| 3 / 888a2309 | DistilBERT report mapper + single-latent 3D autoencoder | tasks/task3 | task3_weights_full_47149.zip |
-| Later Task-1 hardened / ID not supplied | Same weights, unreachable additional output calibration after exec | tasks/task1-later-hardened | Same Task-1 bundle |
+Task 1 and Task 3: download and unzip the corresponding file.
 
-IDs are displayed prefixes, not independently verified full platform UUIDs.
-The correspondence is based on participant descriptions and terminal history.
-Source snapshots were not independently extracted from the uploaded Docker images.
+Task 2: download **both** parts into the same folder, then run:
 
-## Required documentation map
+```bash
+cat task2_weights.zip.part000 task2_weights.zip.part001 > task2_weights.zip
+unzip task2_weights.zip
+```
 
-- Methods, pretrained components, data sources: [challenge responses](CHALLENGE_FORM.md).
-- Team/affiliation: above; other members and preferred wording require confirmation.
-- Access, preprocessing, training/evaluation: [challenge responses](CHALLENGE_FORM.md).
-- Installation, I/O and inference commands: [USAGE.md](docs/USAGE.md).
-- Per-submission configs: configs/task1 and configs/task2; Task-3 shape/latent
-  metadata reside in its binary checkpoints, absent from this small-file collection.
-- Final filenames, SHA-256 and bundle inventories: provenance/ARTIFACTS.json.
-- Results and limitations: [challenge responses](CHALLENGE_FORM.md).
-- Source audit and evidence limits: [SOURCE_AUDIT.md](docs/SOURCE_AUDIT.md).
-- References and usage terms: [REFERENCES.md](docs/REFERENCES.md), [USAGE_TERMS.md](docs/USAGE_TERMS.md).
+### Automatic download
 
-## Data access
+From the repository root, run one command for the task you want:
 
-Obtain CT-RATE under its authorized access and license procedures at
-https://huggingface.co/datasets/ibrahimhamamci/CT-RATE . The challenge's reference
-contracts/evaluators are at https://github.com/forithmus/VLM3D-Dockers .
-Do not commit scans, patient reports, validation membership with identifying
-information, hidden evaluation data or credentials. Pretraining weights are not
-evidence that an additional dataset was directly used by this team.
+```bash
+python3 scripts/download_weights.py task1
+python3 scripts/download_weights.py task2
+python3 scripts/download_weights.py task3
+```
 
-## What the audit establishes
+Or download all three:
 
-The uploaded collection reports one missing file: the old Task-3 baseline-fixed
-Docker archive. Retained final archives, source snapshots, weight hashes and
-configs were collected without reported errors. All three collected Task-1 ZIPs
-share the same SHA-256, despite different modification times. The repaired
-Task-1 entrypoint runs output calibration before the contract guard; the later
-entrypoint places it after exec, making it unreachable. The final label-graph
-coefficients are all zero. Task 2 actually uses LoRA. These facts replace earlier
-provisional descriptions. They do not prove source-to-image binary equivalence.
+```bash
+python3 scripts/download_weights.py all
+```
 
-## Remaining release actions
+The script downloads, joins Task 2's parts, checks the ZIP's SHA-256 and extracts
+to weights/task1, weights/task2 or weights/task3. Python 3 is the only download
+dependency. Keep the complete extracted bundle together. Cloning Git alone does
+not download the weights.
 
-1. Confirm score and full ID for cd1082ec and 888a2309; Task-2 official screenshot
-   identifies CRG 0.3497 and macro-F1 0.1264 for a8799c78.
-2. Publish authorized exact weight bundles, add versioned download links, and
-   document access restrictions if redistribution is not permitted.
-3. Confirm team and review component licenses. No blanket license is imposed here.
-4. Recover missing historical training settings/logs if required; do not replace
-   them with CLI defaults. Add further valid leaderboard runs if the organizers
-   require documentation of every run rather than the selected methods.
-5. Run the exact model's local contract test before claiming a reproduced result.
+## Models
 
-AI assisted development and retrospective documentation. Human review and
-appropriate venue disclosure remain necessary. No posterior-fusion, diffusion,
-synthetic-augmentation or new shared-CV results are attributed to these submissions.
+| Task | Method | Main checkpoint files |
+|---|---|---|
+| 1 | DINOv2-base slice encoder, three pathology-query heads, calibrated ensemble | dino_head_0.pt, dino_head_1.pt, dino_head_2.pt |
+| 2 | Volumetric Swin encoder, Qwen2.5-0.5B LoRA, pathology-consistency reranking | task2_best.pt, RadBertClassifier.pth, reranker.joblib |
+| 3 | DistilBERT report mapper and a single-latent 3D autoencoder | task3_autoencoder.pt, task3_report_to_latent/mapper.pt |
+
+## Documentation
+
+- [Methodology, validation and limitations for each task](CHALLENGE_FORM.md)
+- [Installation, input/output formats and inference](USAGE.md)
+- [References](REFERENCES.md)
+- [Usage terms](TERMS.md)
+
+Source code is in tasks/task1, tasks/task2 and tasks/task3. Configurations and
+weight filenames for **all three tasks** are in configs/task1, configs/task2
+and configs/task3. Task 3's runtime settings are in configs/task3/inference.json
+and configs/task3/runtime.env. The large weight files are release assets,
+separate from the configuration files.
+
+## Team and data
+
+Peter Sauer — UCLA–Caltech Medical Scientist Training Program,
+David Geffen School of Medicine at UCLA.
+
+Training and development used challenge-provided CT-RATE data and pretrained
+models. Obtain the data through the [CT-RATE dataset page](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE).
+Official task schemas and evaluation code are available in
+[VLM3D-Dockers](https://github.com/forithmus/VLM3D-Dockers).

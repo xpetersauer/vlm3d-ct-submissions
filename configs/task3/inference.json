@@ -1,0 +1,32 @@
+{
+  "submission": "888a2309",
+  "model": "DistilBERT-conditioned 3D latent regression",
+  "text_encoder": "distilbert-base-uncased",
+  "autoencoder_checkpoint": "/weights/task3_autoencoder.pt",
+  "mapper_checkpoint_directory": "/weights/task3_report_to_latent",
+  "architecture_source_defaults": {
+    "target_shape": [
+      64,
+      96,
+      96
+    ],
+    "latent_dim": 512,
+    "base_channels": 16
+  },
+  "architecture_resolution": "Saved checkpoint metadata controls instantiated architecture dimensions.",
+  "environment_defaults": {
+    "TASK3_BATCH_SIZE": "16",
+    "TASK3_SAVE_WORKERS": "4",
+    "TASK3_AMP": "1",
+    "TASK3_RESUME": "1",
+    "TASK3_ALLOW_CPU": "0"
+  },
+  "input": "/input/prompts.json",
+  "output_directory": "/output",
+  "output": {
+    "format": "nii.gz",
+    "dtype": "int16",
+    "intensity_units": "HU",
+    "affine": "identity"
+  }
+}

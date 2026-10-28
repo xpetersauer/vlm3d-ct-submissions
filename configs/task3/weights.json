@@ -1,0 +1,17 @@
+{
+  "submission": "888a2309",
+  "filename": "task3_weights_full_47149.zip",
+  "bytes": 516792909,
+  "sha256": "b06dea5916646cda857f815d595e609523384566fcd602cbc34ad3decf13722a",
+  "assets": [
+    "task3_weights_full_47149.zip"
+  ],
+  "checkpoints": [
+    "task3_autoencoder.pt",
+    "task3_report_to_latent/mapper.pt"
+  ],
+  "release": "https://github.com/xpetersauer/vlm3d-ct-submissions/releases/tag/weights-v1",
+  "download_urls": [
+    "https://github.com/xpetersauer/vlm3d-ct-submissions/releases/download/weights-v1/task3_weights_full_47149.zip"
+  ]
+}
