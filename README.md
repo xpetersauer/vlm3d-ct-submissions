@@ -1,6 +1,6 @@
 # VLM3D CT-RATE submissions
 
-Code, configurations and trained weights for Peter Sauer's three CT challenge submissions.
+Code, configurations, and trained weights for Peter Sauer's three CT challenge submissions.
 
 ## Download the model weights
 
@@ -22,6 +22,7 @@ Task 2: download **both** parts into the same folder, then run:
 cat task2_weights.zip.part000 task2_weights.zip.part001 > task2_weights.zip
 unzip task2_weights.zip
 ```
+Task 2’s weights are about 2.9 GB, so they were split into two files to fit GitHub Releases’ per-file upload limit.
 
 ### Automatic download
 
@@ -41,8 +42,7 @@ python3 scripts/download_weights.py all
 
 The script downloads, joins Task 2's parts, checks the ZIP's SHA-256 and extracts
 to weights/task1, weights/task2 or weights/task3. Python 3 is the only download
-dependency. Keep the complete extracted bundle together. Cloning Git alone does
-not download the weights.
+dependency. 
 
 ## Models
 
@@ -65,15 +65,10 @@ and configs/task3. Task 3's runtime settings are in configs/task3/inference.json
 and configs/task3/runtime.env. The large weight files are release assets,
 separate from the configuration files.
 
-## Team and data
-
-Peter Sauer — UCLA–Caltech Medical Scientist Training Program,
-David Geffen School of Medicine at UCLA.
+## Data
 
 Training and development used challenge-provided CT-RATE data and pretrained
 models. Obtain the data through the [CT-RATE dataset page](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE).
-Official task schemas and evaluation code are available in
-[VLM3D-Dockers](https://github.com/forithmus/VLM3D-Dockers).
 
 ## AI assistance disclosure
 
