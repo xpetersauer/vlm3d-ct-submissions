@@ -1,0 +1,6 @@
+{
+  "source_file": "Pasted text(1).txt",
+  "source_date": "2026-08-20",
+  "recorded_command": "python -u sota_deadline/train_sota_task2.py --reports-csv ./CT-RATE/dataset/radiology_text_reports/train_reports.csv --labels-csv ./CT-RATE/dataset/multi_abnormality_labels/train_predicted_labels.csv --val-reports-csv ./CT-RATE/dataset/radiology_text_reports/validation_reports.csv --val-labels-csv ./CT-RATE/dataset/multi_abnormality_labels/valid_predicted_labels.csv --out ./checkpoints/sota_task2_ALL_5ep --epochs 5 --batch-size 1 --val-cases 250 --target-shape 64 96 96 --token-grid 4 6 6 --visual-tokens 32 --feature-size 24 --depths 1 1 1 1 --num-heads 3 6 12 24 --lm-name Qwen/Qwen2.5-0.5B-Instruct --max-target-length 256 --aux-pathology-weight 0.25 --lr 1e-4 --vision-lr 1e-5 --warmup-ratio 0.05 --checkpoint-every 5000 --task1-checkpoint ./checkpoints/task1_DEADLINE_5k.pt",
+  "note": "The log records the command and epoch losses; the archived early trainer predates the external validation flags."
+}

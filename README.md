@@ -77,3 +77,9 @@ help develop and revise code, troubleshoot errors, design experiments,
 and draft documentation. AI assistance included model implementation,
 training and inference workflows, evaluation scripts, and deployment
 packaging. The author directed the project and executed the submission workflows.
+
+<!-- recovered-training-link -->
+## Training and final workflow
+
+[Training instructions](TRAINING.md) cover the recovered trainers and isolated reproduction commands.
+[Final submission workflow](FINAL_WORKFLOW.md) describes the final inference configuration and fixes.
