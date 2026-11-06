@@ -64,8 +64,11 @@
     "bytes": 1846
   },
   "training/original/sota_deadline/README.md": {
-    "sha256": "783522d3c64ae2a178845eed46af9a531ea5c20778f80b2aed096c3652dd4707",
-    "bytes": 2720
+    "sha256": "97ed244a4eb6a5489905750e55598d4bd7f1a31ace246210547295e19d0f7c7b",
+    "bytes": 2889,
+    "original_sha256": "783522d3c64ae2a178845eed46af9a531ea5c20778f80b2aed096c3652dd4707",
+    "original_bytes": 2720,
+    "note": "README annotated as historical documentation; training source code unchanged."
   },
   "training/original/sota_deadline/requirements_additions.txt": {
     "sha256": "93bdd3e30cfa081d4104f24755c1fd513f1c66b73d47ed8547dd8f8dd7052cd1",
