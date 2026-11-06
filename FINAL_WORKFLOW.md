@@ -92,7 +92,8 @@ Task 2: CRG 0.3497, macro-F1 0.1264.
 Task 3: platform-reported FVD (CTNet) 0.8323, average FID 2.5D 3435.7003,
 average CT-CLIPScore 10.3737. Full results are in CHALLENGE_FORM.md.
 
-Recovered original sources were syntax-checked and the new adapters were tested
-on CPU fixtures. GPU training and end-to-end model inference were not rerun
-during this recovery. A new training run is distinct from inference using the
-published weights.
+## Reproduction checks
+
+Source syntax, workspace preparation and compatibility helpers were checked
+using CPU fixtures. These checks do not reproduce the official challenge
+evaluation; the official scores above come from the submitted model runs.
