@@ -2,7 +2,8 @@
 
 The original DINO head trainer, feature extractor, selection code, report
 generator trainer and Task-3 training/resume patches are included under
-training/original/. Their original contents are preserved. The stage runner
+training/original/. Original training source code is preserved; the archived
+README is annotated as historical documentation. The stage runner
 creates isolated working copies and writes new training outputs separately from
 the released submission weights.
 
