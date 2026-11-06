@@ -65,6 +65,10 @@ and configs/task3. Task 3's runtime settings are in configs/task3/inference.json
 and configs/task3/runtime.env. The large weight files are release assets,
 separate from the configuration files.
 
+## Team
+
+Peter Sauer — UCLA–Caltech Medical Scientist Training Program, David Geffen School of Medicine at UCLA.
+
 ## Data
 
 Training and development used challenge-provided CT-RATE data and pretrained
@@ -81,5 +85,9 @@ packaging. The author directed the project and executed the submission workflows
 <!-- recovered-training-link -->
 ## Training and final workflow
 
-[Training instructions](TRAINING.md) cover the recovered trainers and isolated reproduction commands.
+[Training instructions](TRAINING.md) cover model training and reproduction commands.
 [Final submission workflow](FINAL_WORKFLOW.md) describes the final inference configuration and fixes.
+
+## License
+
+Original project code is available under the [MIT License](LICENSE). Third-party code, datasets and pretrained model assets retain their respective licenses; see [usage terms](TERMS.md).
