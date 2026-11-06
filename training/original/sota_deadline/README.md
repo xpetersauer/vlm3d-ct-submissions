@@ -1,6 +1,9 @@
-# VLM3D deadline-oriented modernized models
+# Historical development notes: modernized models
 
-These are **experimental training replacements**, not drop-in challenge submission wrappers yet. Keep your working baseline/Docker path untouched until these beat it.
+This document records an earlier stage of model development, when these trainers
+were experimental replacements for the baseline. It describes the candidate
+architectures and commands considered at that stage. For the submitted model
+architectures and current training commands, see [Training instructions](../../../TRAINING.md).
 
 ## Task 1
 
