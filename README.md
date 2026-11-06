@@ -82,7 +82,6 @@ and draft documentation. AI assistance included model implementation,
 training and inference workflows, evaluation scripts, and deployment
 packaging. The author directed the project and executed the submission workflows.
 
-<!-- recovered-training-link -->
 ## Training and final workflow
 
 [Training instructions](TRAINING.md) cover model training and reproduction commands.
@@ -91,3 +90,9 @@ packaging. The author directed the project and executed the submission workflows
 ## License
 
 Original project code is available under the [MIT License](LICENSE). Third-party code, datasets and pretrained model assets retain their respective licenses; see [usage terms](TERMS.md).
+
+## Release contents
+
+The main branch contains the three submitted inference pipelines and the
+training utilities used by [TRAINING.md](TRAINING.md). Historical experiments,
+duplicate deployment templates and old submission scripts are excluded.

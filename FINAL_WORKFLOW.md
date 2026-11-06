@@ -82,8 +82,6 @@ docker run --rm --gpus all --platform linux/amd64 \
 Substitute task2 or task3 throughout for the other tasks. Start with a new output
 directory when changing checkpoints or prompts, particularly for resumable
 Task-3 inference. USAGE.md describes the expected input and output structures.
-The historical Mac archive finalizers are supplied separately in the recovery
-download; they are not required to download or run the public model release.
 
 ## Official results
 

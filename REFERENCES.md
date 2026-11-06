@@ -12,3 +12,7 @@
 
 The report classifier is distributed as RadBERT-RoBERTa-4m assets and
 RadBertClassifier.pth in the Task-2 bundle.
+
+- Asymmetric Loss (ASL): https://arxiv.org/abs/2009.14119
+- CT-RATE RadBERT classifier and preprocessing: https://github.com/ibrahimethemhamamci/CT-CLIP
+- AnyMC3D (inspiration for slice-feature aggregation; this implementation is not an exact reproduction): https://arxiv.org/abs/2512.12887

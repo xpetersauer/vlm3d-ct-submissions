@@ -1,2 +1,0 @@
-vlm3d-weeklong-champion-bundle v1.0
-Built for existing /workspace/vlm3d_original_task_split workflow.

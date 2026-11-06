@@ -2,8 +2,8 @@
 
 The original DINO head trainer, feature extractor, selection code, report
 generator trainer and Task-3 training/resume patches are included under
-training/original/. Original training source code is preserved; the archived
-README is annotated as historical documentation. The stage runner
+training/original/. This directory contains the trainers and utilities used
+by the commands below. The stage runner
 creates isolated working copies and writes new training outputs separately from
 the released submission weights.
 
@@ -92,8 +92,7 @@ available candidates, averages full-head logits for the ensemble, and fits the
 conditional graph and initial calibration. The released final recipe selected
 the DINO ensemble and has zero graph-mixing coefficients. Outputs are under
 /workspace/vlm3d_reproduction/work/dino_full_s17, dino_full_s29, dino_full_s43
-and posthoc. The recovered original queue also contains the BCE/ASL and Swin
-comparison stages.
+and posthoc. Historical ablation queues and deployment templates are excluded from this release.
 
 ## Task 2: Swin–Qwen generator
 
@@ -165,9 +164,8 @@ Task-1 tables require paired true_<label>/prob_<label> columns and case/group
 identifiers, or an NPZ with y_true, probabilities, labels and groups.
 Task-2 captures contain reference reports, candidate reports and inference-time
 features. They are local development artifacts and must not be published with
-patient information. The recovered run_task12_metric_alignment.sh documents
-how validation volumes were staged, sharded, predicted and captured before
-fitting. For inference with the existing release, use its stored calibrator and
+patient information. The directory also includes volume staging, sharding, prediction-table
+extraction and candidate-capture utilities for preparing these inputs. For inference with the existing release, use its stored calibrator and
 reranker; no fitting is required.
 
 ## Task 3: autoencoder and report mapper
@@ -191,7 +189,7 @@ is frozen during mapper training, and DistilBERT is frozen by default.
 Step/epoch progress and optimizer state are saved by the recovered resume patch.
 The new output ZIP is work/task3_full_training/task3_weights_retrained.zip.
 Repeating the command resumes from saved state; it does not overwrite released
-weights. The original recorded launcher and status script are retained under
+weights. The required training-resume and tensor-cache patches are retained under
 training/original/task3_runpod/.
 
 ## Inspect metadata in the final weights
